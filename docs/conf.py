@@ -13,14 +13,16 @@ release = '0.0.0.1'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
+
 import os
 import sys
+
 sys.path.insert(0, os.path.abspath("../my_py_pkg/src"))
 
 extensions = [
-    "sphinx.ext.viewcode",
-    "sphinx.ext.todo",
-    "sphinx.ext.autodoc",
+    'sphinx.ext.viewcode',
+    'sphinx.ext.todo',
+    'sphinx.ext.autodoc',
 ]
 
 templates_path = ['_templates']
@@ -33,3 +35,8 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
+
+# -- Options for todo extension ----------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/extensions/todo.html#configuration
+
+todo_include_todos = True
