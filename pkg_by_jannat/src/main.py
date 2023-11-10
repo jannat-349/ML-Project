@@ -6,6 +6,4 @@ def main():
     Returns:
     Returns void
     """
-    if __name__ == "__main__":
-        print("Hello!! This is from main")
-main()
+    print("Hello!! This is from main")
