@@ -1,6 +1,3 @@
-import pkg_by_jannat.src.main as main
-main.main()
-
 import pkg_by_jannat.src.module1.file1 as file1
 file1.hello()
 

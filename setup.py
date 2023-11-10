@@ -10,7 +10,7 @@ def read_file(file):
         return f.read()
     
 long_description = read_file(os.path.abspath("README.md"))
-version = "1.0.0"
+version = "1.0.1"
 requirements = read_requirements(os.path.abspath("requirements.txt"))
 
 setup(
