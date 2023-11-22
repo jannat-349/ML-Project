@@ -39,9 +39,6 @@ jobs:
             cd src
             sphinx-apidoc -o ../docs .
             cd ..
-            cd pkg_by_jannat
-            sphinx-apidoc -o ../docs src/
-            cd ..
             
             make -C docs clean
             make -C docs html

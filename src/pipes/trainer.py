@@ -8,6 +8,10 @@ import matplotlib.pyplot as plt
 def plot_predictions(train_data, train_labels,  test_data, test_labels,  predictions):
   """
   Plots training data, test data and compares predictions.
+  Args:
+  train data, train labels, test data, test labels, predictions
+  Returns:
+  Returns report
   """
   plt.figure(figsize=(6, 5))
   # Plot training data in blue
@@ -32,6 +36,10 @@ def plot_predictions(train_data, train_labels,  test_data, test_labels,  predict
 def mae(y_test, y_pred):
   """
   Calculuates mean absolute error between y_test and y_preds.
+  Args:
+  y_test and y_predictions
+  Returns:
+  Returns float
   """
   return tf.metrics.mean_absolute_error(y_test, y_pred)
   
@@ -39,6 +47,10 @@ def mae(y_test, y_pred):
 def mse(y_test, y_pred):
   """
   Calculates mean squared error between y_test and y_preds.
+  Args:
+  y_test and y_predictions
+  Returns:
+  Returns float
   """
   return tf.metrics.mean_squared_error(y_test, y_pred)
 

@@ -17,7 +17,7 @@ release = '0.0.0.1'
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath("../pkg_by_janant/src"))
+sys.path.insert(0, os.path.abspath("../src"))
 
 extensions = [
     'sphinx.ext.viewcode',
